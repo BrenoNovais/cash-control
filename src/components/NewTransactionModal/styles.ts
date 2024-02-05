@@ -38,8 +38,9 @@ export const Content = styled(Dialog.Content)`
         &::placeholder {
             color: ${props => props.theme["gray-500"]};
         }
+    }
 
-        button[type="submit"] {
+    button[type="submit"] {
             height: 58px;
             border: 0;
             background: ${props => props.theme["green-500"]};
@@ -55,7 +56,6 @@ export const Content = styled(Dialog.Content)`
                 transition: background-color 0.2s;
             }
         }
-    }
 `
 
 export const CloseButton = styled(Dialog.Close)`
