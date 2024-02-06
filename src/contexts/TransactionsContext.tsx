@@ -61,7 +61,7 @@ export function TransactionsProvider({ children }: TransactionsProviderProps) {
 
     useEffect(() => {
         BuscaTransactions()
-    }, [])
+    }, [BuscaTransactions])
 
     return (
         <TransactionsContext.Provider value={{ transactions, BuscaTransactions, createTransaction }}>
