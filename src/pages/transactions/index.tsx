@@ -1,4 +1,4 @@
-import { useContext} from "react";
+import { useContext } from "react";
 import { Header } from "../../components/Header";
 import { SearchForm } from "../../components/searchForm";
 import { Summary } from "../../components/summary";
@@ -7,7 +7,7 @@ import { TransactionsContext } from "../../contexts/TransactionsContext";
 
 export function Transcactions() {
 
-    const {transactions} = useContext(TransactionsContext)
+    const { transactions } = useContext(TransactionsContext)
 
     return (
         <div>

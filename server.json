@@ -5,16 +5,24 @@
             "description": "Desenvolvimento de Site",
             "type": "income",
             "category": "Venda",
-            "price": 14000,
+            "price": 1400,
             "createdAt": "2024-01-05-T17:01:01.505Z"
         },
         {
-            "id": "2",
+            "id": 2,
             "description": "Hamburguer",
-            "type": "income",
+            "type": "outcome",
             "category": "Alimentação",
-            "price": 39.90,
+            "price": 39,
             "createdAt": "2024-01-05-T17:01:01.505Z"
+        },
+        {
+            "id": 3,
+            "description": "Academia",
+            "type": "outcome",
+            "category": "Saude",
+            "price": 69,
+            "createdAt": "2024-01-01-T10:01:01.505Z"
         }
     ]
 }
