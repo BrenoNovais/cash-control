@@ -19,21 +19,23 @@ export function Transcactions() {
                 <SearchForm />
                 <TansactionsTable>
                     <tbody>
-                        {transactions.map(transaction => {
-                            return (
-                                <tr key={transaction.id}>
-                                    <td width="100%">{transaction.description}</td>
-                                    <td>
-                                        <PriceHighLight variant={transaction.type}>
-                                            {transaction.type === 'outcome' && '- '}
-                                            {priceFormatter.format(transaction.price)}
-                                        </PriceHighLight>
-                                    </td>
-                                    <td>{transaction.category}</td>
-                                    <td>{dateFormatter.format(new Date(transaction.createdAt))}</td>
-                                </tr>
-                            )
-                        })}
+                        {
+                            transactions.map(transaction => {
+                                return (
+                                    <tr key={transaction.id}>
+                                        <td width="100%">{transaction.description}</td>
+                                        <td>
+                                            <PriceHighLight variant={transaction.type}>
+                                                {transaction.type === 'outcome' && '- '}
+                                                {priceFormatter.format(transaction.price)}
+                                            </PriceHighLight>
+                                        </td>
+                                        <td>{transaction.category}</td>
+                                        <td>{dateFormatter.format(new Date(transaction.createdAt))}</td>
+                                    </tr>
+                                )
+                            })
+                        }
 
                     </tbody>
                 </TansactionsTable>
