@@ -90,7 +90,7 @@ export function NewTransactionModal() {
                         }} />
 
                     <button type="submit" disabled={isSubmitting}>
-                        Cadsstrar
+                        Cadastrar
                     </button>
                 </form>
 

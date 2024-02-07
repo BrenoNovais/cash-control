@@ -9,13 +9,12 @@ export function Header() {
         <HeaderContainer>
             <HeaderContent>
                 <img src={logo} alt=" logo de dois triangulos translucidos sobrepostos na diagonal " />
-                <h1>DT MONEY</h1>
+                <h1>CASH💲CONTROL</h1>
 
                 <Dialog.Root>
                     <Dialog.Trigger asChild>
                         <NewTransactionButton>Nova transação</NewTransactionButton>
                     </Dialog.Trigger>
-
                     <NewTransactionModal />
                 </Dialog.Root>
 

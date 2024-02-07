@@ -8,7 +8,7 @@ interface Transaction {
     type: 'income' | 'outcome'
     price: number
     category: string
-    createdAt: string
+    created_at: string
 }
 
 interface TransactionContextType {
@@ -38,12 +38,11 @@ export function TransactionsProvider({ children }: TransactionsProviderProps) {
 
         const response = await api.get('/transactions', {
             params: {
-                _sort: 'createdAt',
+                _sort: 'created_at',
                 _order: 'desc',
                 q: query,
             }
         })
-
         setTransactions(response.data)
     }, [])
 
@@ -52,9 +51,9 @@ export function TransactionsProvider({ children }: TransactionsProviderProps) {
 
             const { description, price, category, type } = dados
 
-            const response = await api.post("/transactions", { description, price, category, type, createdAt: new Date() })
+            const response = await api.post("/transactions", { description, price, category, type, created_at: new Date() })
 
-            setTransactions(state => [response.data, ...state])
+            setTransactions(state => [response.data.data, ...state])
         },
         []
     )
